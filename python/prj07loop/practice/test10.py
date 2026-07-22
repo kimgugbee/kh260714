@@ -21,7 +21,10 @@ while True:
 
     # 메뉴번호에 따라서 동작
     if num == 1 :
-        money -= 1500
+        if money < 1500 :
+            print("돈 없음")
+        else :
+            money -= 1500
         print("1500 원 차감")
     elif num == 2 :
         money -= 1300
